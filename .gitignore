@@ -112,3 +112,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/ZBot.iml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/encodings.xml
+src/chromedriver.exe
