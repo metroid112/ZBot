@@ -10,8 +10,8 @@ driver.get("https://web.whatsapp.com/")
 
 wait = WebDriverWait(driver, 600)
 
-target = '"Ricos, Mocosos y Currrvos"'
-string = "Esto es un bot aprovado por Bantotal, entreguenme su salario"
+target = '"Test"'
+string = "Esto es un bot aprovado por ZGAU, entreguenme sus cromosomas pedazos de mierda mira lo largo que es este mensaje asi se ve como se esta escribiendo asi me da el tiempo para grabar esta porqueria jeje"
 
 x_arg = '//span[contains(@title,' + target + ')]'
 print('buscando titulo')
@@ -20,7 +20,7 @@ group_title = wait.until(EC.presence_of_element_located((
 print('encontrado, click', group_title)
 group_title.click()
 print('clickeado, buscando input')
-inp_xpath = '//div[contains(@class,\'copyable-text selectable-text\')][@dir="ltr"][@data-tab="1"]'
+inp_xpath = '//div[contains(@class,"copyable-text selectable-text")][@dir="ltr"][@data-tab="1"]'
 input_box = wait.until(EC.presence_of_element_located((
     By.XPATH, inp_xpath)))
 print('encontrado!, send', inp_xpath)
