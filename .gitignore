@@ -118,4 +118,6 @@ dmypy.json
 .idea/modules.xml
 .idea/misc.xml
 .idea/encodings.xml
+
 src/chromedriver.exe
+src/User_Data/
