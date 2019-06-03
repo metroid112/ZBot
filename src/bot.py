@@ -14,12 +14,6 @@ def find_chat(chat_title):
     return wait.until(EC.presence_of_element_located((By.XPATH, x_arg)))
 
 
-def find_last_text(text_counter):
-    text_xpath = f'//*[@id="main"]/div[3]/div/div/div[3]/div[{text_counter}]/div/div/div[1]/div/span/text()'
-
-    return wait.until(EC.presence_of_element_located((By.XPATH, text_xpath)))
-
-
 logging.basicConfig(filename='chat.log', level=logging.WARNING, format='%(asctime)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 options = webdriver.ChromeOptions()
 options.add_argument('--user-data-dir=./User_Data')
