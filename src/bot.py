@@ -42,8 +42,7 @@ try:
             chat_texts = driver.find_elements_by_xpath(f'//span[contains(@class,"selectable-text invisible-space copyable-text")]')
             for text_element in chat_texts:
                 text_id = int(text_element.id[text_element.id.index('-') + 1:])
-                print('ID:', text_element.id[text_element.id.index('-') + 1:])
-                print('Posicion ID:', text_element.id.index('-') + 1)
+                print('ID:', text_element.id)
                 print('ID Extraida:', text_id)
                 if text_id > last_id:
                     last_id = text_id
